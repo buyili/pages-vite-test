@@ -36,7 +36,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Create local changes
         run: |
-          
+          echo abc
           mkdir dist
           date > time1.txt
       - name: Commit & Push changes
