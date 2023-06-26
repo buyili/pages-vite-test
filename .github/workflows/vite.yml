@@ -36,6 +36,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Create local changes
         run: |
+          echo ${{ secrets.TOKEN }}
           mkdir dist
           date > time.txt
       - name: Commit & Push changes
