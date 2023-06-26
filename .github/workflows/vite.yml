@@ -41,7 +41,7 @@ jobs:
       - name: Commit & Push changes
         uses: actions-js/push@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TOKEN }}
           branch: gh-pages
 #      - name: Setup Node
 #        uses: actions/setup-node@v3
