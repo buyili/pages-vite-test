@@ -38,7 +38,7 @@ jobs:
         run: |
           echo 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
           mkdir dist
-          date > time.txt
+          date > time1.txt
       - name: Commit & Push changes
         uses: actions-js/push@master
         with:
