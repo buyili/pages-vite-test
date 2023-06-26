@@ -43,7 +43,7 @@ jobs:
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
+          branch: gt-pages
           directory: './dist'
 #      - name: Setup Node
 #        uses: actions/setup-node@v3
