@@ -36,13 +36,13 @@ jobs:
         uses: actions/checkout@v3
       - name: Create local changes
         run: |
-          echo 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
+          echo ${{ secrets.TOKEN }}
           mkdir dist
           date > time.txt
       - name: Commit & Push changes
         uses: actions-js/push@master
         with:
-          github_token: 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
+          github_token: ${{ secrets.TOKEN }}
           branch: gh-pages
 #      - name: Setup Node
 #        uses: actions/setup-node@v3
